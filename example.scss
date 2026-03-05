@@ -1,14 +1,13 @@
 .widget {
-  color: white;
-  padding: 12px;
-  border-radius: 6px;
+  color: var(--color-text);
+  font-size: 1em;
 
   button {
-    margin-top: 8px;
+    background: var(--color-primary);
+    font-size: 1em;
   }
 
   .message {
-    margin-top: 10px;
     color: #4ade80;
   }
 }

@@ -1,17 +1,11 @@
 <div class="widget">
-  <h2>{{ title() }}</h2>
-
-  {{ json config() }}
-
-  <button class="btn btn-primary" id="btn">Click me</button>
-
-  {{#if showMessage()}}
-    <p class="message">{{ message() }}</p>
+  <h1>{{ title() }}</h1>
+  <button id="btn">Show passed config</button>
+  {{#if showConfig()}}
+    <div>
+      {{#each Object.entries(config().config || {})}}
+        <div>{{ this[0] }}: {{ this[1] }}</div>
+      {{/each}}
+    </div>
   {{/if}}
-
-  <ul>
-    {{#each items()}}
-      <li>{{ this }}</li>
-    {{/each}}
-  </ul>
 </div>
