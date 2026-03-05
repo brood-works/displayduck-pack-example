@@ -1,0 +1,65 @@
+[
+    {
+        "type": {
+            "name": "media-display",
+            "icon": "lni lnis-music"
+        },
+        "icon": "lni lnis-music",
+        "name": "Media Display",
+        "description": "Displays currently playing media according to system",
+        "platform": "all",
+        "minWidth": 200,
+        "minHeight": 100,
+        "config": {
+            "autoHide": {
+                "label": "Auto-hide",
+                "subLabel": "Hide when no media is playing",
+                "type": "boolean",
+                "defaultValue": false
+            },
+            "exampleBoolean": {
+                "label": "Example Boolean",
+                "subLabel": "This is an example boolean config option",
+                "type": "boolean",
+                "defaultValue": false
+            },
+            "exampleColorPicker": {
+                "label": "Example Color Picker",
+                "subLabel": "This is an example color picker config option",
+                "type": "color-picker",
+                "defaultValue": "#ffffff"
+            },
+            "exampleNumber": {
+                "label": "Example Number",
+                "subLabel": "This is an example number config option",
+                "type": "number",
+                "defaultValue": 0
+            },
+            "exampleSelect": {
+                "label": "Example Select",
+                "subLabel": "This is an example select config option",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "Option 1",
+                        "value": "option1"
+                    },
+                    {
+                        "label": "Option 2",
+                        "value": "option2"
+                    },
+                    {
+                        "label": "Option 3",
+                        "value": "option3"
+                    }
+                ],
+                "defaultValue": "option1"
+            },
+            "exampleWidgetPicker": {
+                "label": "Example Widget Picker",
+                "subLabel": "This is an example widget picker config option",
+                "type": "widget"
+            }
+        }
+    }
+]
