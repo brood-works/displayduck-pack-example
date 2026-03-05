@@ -1,5 +1,10 @@
 [
     {
+        "type": {
+            "name": "demo",
+            "icon": "fas fa-bug"
+        },
+        "id": "example",
         "icon": "fas fa-code",
         "name": "Example Widget",
         "description": "This is an example widget for development purposes",

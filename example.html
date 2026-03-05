@@ -1,0 +1,17 @@
+<div class="widget">
+  <h2>{{ title() }}</h2>
+
+  {{ json config() }}
+
+  <button class="btn btn-primary" id="btn">Click me</button>
+
+  {{#if showMessage()}}
+    <p class="message">{{ message() }}</p>
+  {{/if}}
+
+  <ul>
+    {{#each items()}}
+      <li>{{ this }}</li>
+    {{/each}}
+  </ul>
+</div>
