@@ -1,53 +1,63 @@
-[
-    {
-        "type": {
-            "name": "demo",
-            "icon": "fas fa-bug"
-        },
-        "id": "example",
-        "icon": "fas fa-code",
-        "name": "Example Widget",
-        "description": "This is an example widget for development purposes",
-        "platform": "all",
-        "minWidth": 200,
-        "minHeight": 100,
-        "config": {
-            "autoHide": {
-                "label": "Auto-hide",
-                "subLabel": "Hide when no media is playing",
-                "type": "boolean",
-                "defaultValue": false
+{
+    "icon": "fas fa-bug",
+    "name": "Example Widget",
+    "description": "This is an example widget for development purposes.",
+    "assets": [],
+    "widgets": [
+        {
+            "type": {
+                "name": "demo",
+                "icon": "fas fa-bug"
             },
-            "exampleBoolean": {
-                "label": "Example Boolean",
-                "subLabel": "This is an example boolean config option",
-                "type": "boolean",
-                "defaultValue": false
-            },
-            "exampleColorPicker": {
-                "label": "Example Color Picker",
-                "subLabel": "This is an example color picker config option",
-                "type": "color-picker",
-                "defaultValue": "#ffffff"
-            },
-            "exampleNumber": {
-                "label": "Example Number",
-                "subLabel": "This is an example number config option",
-                "type": "number",
-                "defaultValue": 0
-            },
-            "exampleSelect": {
-                "label": "Example Select",
-                "subLabel": "This is an example select config option",
-                "type": "select",
-                "options": ["option1", "option2", "option3"],
-                "defaultValue": "option1"
-            },
-            "exampleWidgetPicker": {
-                "label": "Example Widget Picker",
-                "subLabel": "This is an example widget picker config option",
-                "type": "widget"
+            "id": "example",
+            "icon": "fas fa-code",
+            "name": "Example Widget",
+            "description": "This is an example widget for development purposes",
+            "platform": "all",
+            "minWidth": 200,
+            "minHeight": 100,
+            "config": {
+                "autoHide": {
+                    "label": "Auto-hide",
+                    "subLabel": "Hide when no media is playing",
+                    "type": "boolean",
+                    "defaultValue": false
+                },
+                "exampleBoolean": {
+                    "label": "Example Boolean",
+                    "subLabel": "This is an example boolean config option",
+                    "type": "boolean",
+                    "defaultValue": false
+                },
+                "exampleColorPicker": {
+                    "label": "Example Color Picker",
+                    "subLabel": "This is an example color picker config option",
+                    "type": "color-picker",
+                    "defaultValue": "#ffffff"
+                },
+                "exampleNumber": {
+                    "label": "Example Number",
+                    "subLabel": "This is an example number config option",
+                    "type": "number",
+                    "defaultValue": 0
+                },
+                "exampleSelect": {
+                    "label": "Example Select",
+                    "subLabel": "This is an example select config option",
+                    "type": "select",
+                    "options": [
+                        "option1",
+                        "option2",
+                        "option3"
+                    ],
+                    "defaultValue": "option1"
+                },
+                "exampleWidgetPicker": {
+                    "label": "Example Widget Picker",
+                    "subLabel": "This is an example widget picker config option",
+                    "type": "widget"
+                }
             }
         }
-    }
-]
+    ]
+}
