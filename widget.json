@@ -3,6 +3,7 @@
     "name": "Example Widget",
     "description": "This is an example widget for development purposes.",
     "assets": [],
+    "version": "0.0.1",
     "widgets": [
         {
             "type": {
