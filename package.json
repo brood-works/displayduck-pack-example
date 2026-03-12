@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "node ../../app/scripts/build-plugins.mjs --plugin-dir .",
+    "development": "node ../../app/scripts/build-plugins.mjs --plugin-dir . --watch"
+  },
   "devDependencies": {
     "@displayduck/base": "^0.1.0"
   }
