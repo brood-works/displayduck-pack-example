@@ -2,14 +2,11 @@
     "icon": "fas fa-bug",
     "name": "Example Widget",
     "description": "This is an example widget for development purposes.",
-    "assets": [],
+    "assets": ["src/img"],
     "version": "0.0.1",
     "widgets": [
         {
-            "type": {
-                "name": "demo",
-                "icon": "fas fa-bug"
-            },
+            "category": "utility",
             "id": "example",
             "icon": "fas fa-code",
             "name": "Example Widget",
@@ -39,7 +36,7 @@
                 "exampleDropdown": {
                     "label": "Example Dropdown",
                     "subLabel": "This is an example dropdown config option",
-                    "type": "dropdown",
+                    "type": "select",
                     "options": [
                         "option1",
                         "option2",

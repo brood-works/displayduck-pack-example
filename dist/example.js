@@ -431,7 +431,6 @@ let DisplayDuckWidget$1 = class DisplayDuckWidget {
   constructor(ctx) {
     this.ctx = ctx;
     this.config = signal(ctx.payload ?? {});
-    this.title = signal(this.config().title ?? "Example widget");
     this.showConfig = signal(false);
   }
   onInit() {
@@ -442,8 +441,8 @@ let DisplayDuckWidget$1 = class DisplayDuckWidget {
   onDestroy() {
   }
 };
-const template = '<div class="widget">\n  <h1><i class="fas fa-cog"></i> {{ title() }}</h1>\n  <button id="btn">Show passed configz?</button>\n  {{#if showConfig()}}\n    <div>\n      {{#each Object.entries(config().config || {})}}\n        <div>{{ this[0] }}: {{ this[1] }}</div>\n      {{/each}}\n    </div>\n  {{/if}}\n</div>\n';
-const styles = ".widget {\n  color: var(--color-text);\n  font-size: 1em;\n}\n.widget button {\n  background: var(--color-primary);\n  font-size: 1em;\n}\n.widget .message {\n  color: #4ade80;\n}";
+const template = '<div class="widget">\n  <div class="title">\n    <div class="image">\n      <img src="{{ASSETS}}/img/logo.png" alt="DisplayDuck Logo" />\n    </div>\n    <div class="text">\n      <h1>Example Widgeth</h1>\n    </div>\n  </div>\n  <div class="content">\n    <p>This is an example widget for development purposes.</p>\n    <button id="btn">Show passed config</button>\n    {{#if showConfig()}}\n      <div>\n        {{#each Object.entries(config().config || {})}}\n          <div class="key-value">\n            <span class="key">\n              {{ this[0] }}:\n            </span>\n            <span class="value">\n              {{ this[1] }}\n            </span>\n          </div>\n        {{/each}}\n      </div>\n    {{/if}}\n  </div>\n</div>\n';
+const styles = ".widget {\n  height: calc(var(--host-height) - 0.5em);\n  width: calc(var(--host-width) - 0.5em);\n  color: var(--color-text);\n  font-size: 1em;\n  border: 1px solid var(--color-primary);\n  border-radius: 0.5em;\n  box-sizing: border-box;\n  overflow: auto;\n}\n.widget .title {\n  display: flex;\n  background: rgba(255, 255, 255, 0.05);\n  border-bottom: 1px solid var(--color-primary);\n  padding: 1em;\n  justify-content: center;\n}\n.widget .title .image {\n  display: flex;\n  padding-right: 1em;\n}\n.widget .title .image img {\n  width: 100%;\n  max-width: 3em;\n  height: auto;\n  object-fit: contain;\n}\n.widget .title .text {\n  display: flex;\n}\n.widget .title .text h1 {\n  margin: 0;\n}\n.widget .content {\n  padding: 1em;\n}\n.widget .content button {\n  background: var(--color-primary);\n  border-radius: 0.25em;\n  border: none;\n  text-transform: uppercase;\n  padding: 0.5em 1em;\n  font-size: 1em;\n}\n.widget .content .key-value {\n  display: flex;\n}\n.widget .content .key-value .key {\n  font-weight: 700;\n  padding-right: 0.5em;\n}";
 const DisplayDuckWidget2 = createWidgetClass(DisplayDuckWidget$1, { template, styles });
 const Widget = DisplayDuckWidget2;
 const displayduckPackExample_example_entry = { DisplayDuckWidget: DisplayDuckWidget2, Widget };

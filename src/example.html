@@ -1,11 +1,28 @@
 <div class="widget">
-  <h1><i class="fas fa-cog"></i> {{ title() }}</h1>
-  <button id="btn">Show passed configz?</button>
-  {{#if showConfig()}}
-    <div>
-      {{#each Object.entries(config().config || {})}}
-        <div>{{ this[0] }}: {{ this[1] }}</div>
-      {{/each}}
+  <div class="title">
+    <div class="image">
+      <img src="{{ASSETS}}/img/logo.png" alt="DisplayDuck Logo" />
     </div>
-  {{/if}}
+    <div class="text">
+      <h1>Example Widgeth</h1>
+    </div>
+  </div>
+  <div class="content">
+    <p>This is an example widget for development purposes.</p>
+    <button id="btn">Show passed config</button>
+    {{#if showConfig()}}
+      <div>
+        {{#each Object.entries(config().config || {})}}
+          <div class="key-value">
+            <span class="key">
+              {{ this[0] }}:
+            </span>
+            <span class="value">
+              {{ this[1] }}
+            </span>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
 </div>
