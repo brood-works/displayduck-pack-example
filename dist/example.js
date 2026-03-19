@@ -442,7 +442,7 @@ let DisplayDuckWidget$1 = class DisplayDuckWidget {
   onDestroy() {
   }
 };
-const template = '<div class="widget">\n  <h1><i class="fas fa-cog"></i> {{ title() }}</h1>\n  <button id="btn">Show passed config?</button>\n  {{#if showConfig()}}\n    <div>\n      {{#each Object.entries(config().config || {})}}\n        <div>{{ this[0] }}: {{ this[1] }}</div>\n      {{/each}}\n    </div>\n  {{/if}}\n</div>\n';
+const template = '<div class="widget">\n  <h1><i class="fas fa-cog"></i> {{ title() }}</h1>\n  <button id="btn">Show passed configz?</button>\n  {{#if showConfig()}}\n    <div>\n      {{#each Object.entries(config().config || {})}}\n        <div>{{ this[0] }}: {{ this[1] }}</div>\n      {{/each}}\n    </div>\n  {{/if}}\n</div>\n';
 const styles = ".widget {\n  color: var(--color-text);\n  font-size: 1em;\n}\n.widget button {\n  background: var(--color-primary);\n  font-size: 1em;\n}\n.widget .message {\n  color: #4ade80;\n}";
 const DisplayDuckWidget2 = createWidgetClass(DisplayDuckWidget$1, { template, styles });
 const Widget = DisplayDuckWidget2;
