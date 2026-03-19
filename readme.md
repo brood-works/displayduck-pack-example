@@ -26,7 +26,7 @@
 ---
 
 ## About
-This is an example widget for developers as template to study or fork for custom widgets/plugins in DisplayDuck. (including this ReadMe)
+This is an example widget for developers as template to study or fork for custom widgets/packs in DisplayDuck. (including this ReadMe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
